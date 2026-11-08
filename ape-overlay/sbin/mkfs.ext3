@@ -1,0 +1,7 @@
+#!/bin/sh
+# Use the filesystem builder from the MOSLO image which already formatted this
+# N950 successfully.  Reporting its real version for `-V` is intentional:
+# softupd then omits the Maemo-only `-C 32768` cache option.
+exec /opt/moslo/lib/ld-linux.so.3 \
+    --library-path /opt/moslo/lib \
+    /opt/moslo/sbin/mkfs.ext4 "$@"

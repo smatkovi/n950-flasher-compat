@@ -1,0 +1,7 @@
+n950-local.conf
+logs/
+*.log
+*.bin
+flasher-3.12.1-erase240m
+release/
+stock-ape-root/

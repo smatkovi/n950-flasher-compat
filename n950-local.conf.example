@@ -1,0 +1,12 @@
+# Copy to n950-local.conf, fill in the values, and chmod 600 the result.
+# Never commit the local file: the device identifier is normally its IMEI.
+
+N950_DEVICE_ID=000000000000000
+N950_MAIN_IMAGE=/absolute/path/to/DFL61_HARMATTAN_40.2012.21-3_PR_LEGACY_RM680-OEM1-916_ARM.bin
+N950_EMMC_IMAGE=/absolute/path/to/emmc.bin
+N950_UBIBOOT_IMAGE=/absolute/path/to/zImage_2.6.32.54-ubiboot-02_23032018
+
+# Optional path overrides:
+# N950_STOCK_FLASHER=/usr/bin/flasher
+# N950_LONG_FLASHER=/absolute/path/to/flasher-3.12.1-erase240m
+# N950_ACK_APE=/absolute/path/to/ape-algo-moslo-fs-erase-ack.bin

@@ -1,0 +1,5 @@
+#!/bin/sh
+# Run the stock Harmattan label utility with the self-contained MOSLO runtime.
+exec /opt/moslo/lib/ld-linux.so.3 \
+    --library-path /opt/moslo/lib \
+    /opt/moslo/sbin/dosfslabel "$@"
