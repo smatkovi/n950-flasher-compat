@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.1.1 — 2026-11-09
+
+- Add optional prebuilt, byte-verified host-flasher and exact-range APE assets
+  to the GitHub prerelease.
+- Add an explicit third-party binary provenance and licensing notice.
+- Keep Nokia Main/eMMC firmware and UbiBoot out of the release.
+
 ## v0.1.0 — 2026-11-08
 
 - Add the hardware-tested exact-range erase acknowledgement for the RM-680

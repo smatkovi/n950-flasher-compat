@@ -48,11 +48,24 @@ The earlier 96 MiB secure-discard split and the 8 MiB normal-discard fallback
 were **not** successful on this old kernel/eMMC combination and are not the
 recommended recovery path.
 
-## No vendor binaries
+## Source tree and prebuilt release assets
 
-This repository and its releases intentionally contain no Nokia firmware,
-Nokia flasher binary, extracted Nokia initramfs, MOSLO binary, or UbiBoot
-kernel.  You must supply your own copies.  See [NOTICE.md](NOTICE.md).
+The Git source tree contains no Nokia firmware, extracted Nokia initramfs,
+MOSLO image, or UbiBoot kernel.  You must supply the original Main/eMMC
+firmware and UbiBoot yourself.
+
+Starting with the optional `v0.1.1` prerelease, GitHub Release assets also
+include the two byte-verified compatibility binaries used by the tested path:
+
+```text
+flasher-3.12.1-erase240m
+ape-algo-moslo-fs-erase-ack.bin
+```
+
+These generated files contain or derive from third-party Nokia/MOSLO code and
+are not covered by this repository's MIT License.  Review
+[BINARY-ASSET-NOTICE.md](BINARY-ASSET-NOTICE.md) before downloading or
+redistributing them.
 
 Known input and output hashes are listed in
 [KNOWN-HASHES.md](KNOWN-HASHES.md).
